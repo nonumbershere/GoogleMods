@@ -1,0 +1,39 @@
+ /*  _____         _______                      
+  / ____|       |__   __|                     
+ | (___   ___ _ __ | |_ __ ___ _ __ ___   ___ 
+  \___ \ / _ \ '_ \| | '__/ _ \ '_ ` _ \ / _ \
+  ____) |  __/ |_) | | | |  __/ | | | | |  __/
+ |_____/ \___| .__/|_|_|  \___|_| |_| |_|\___|
+             | |                              
+             |_|
+             
+             
+             [
+             ALL RIGHTS GO TO LAPIDE
+             ]
+             [info]: [This is the "BEST" MOD MENU for chrome:dino]
+             
+             [patch log]: []
+             
+             [updates]: []
+*/                                                                                           //                                                             Free!?!?!?!            
+
+// How to use
+/*
+     Click INJECT!
+     [another CREATOR menu is comming!]
+     HOW TO MAKE:
+     "TO" make a menu we will add in a "creator mod menu" for hack creators!
+     Includes javascript, html.
+     DONT WORRY IF YOU DONT KNOW "ANY" JAVASCRIPT OR HTML JUST GO TO THE FOLDER CALLED "How To"
+     THEN "ModMenuMaking"
+     COPY "tutorial1.js" AND PASTE IT TO THE DEV CONSOLE!
+     After that:
+     Go back to "How To" <-- ORIGINAL
+     Go to "CODES" <-- FOR ORIGINAL!
+     Copy and paste it on the "<button onclick="HERE!"></button>"
+     To get more codes go to the "Cheats" then go to the "Codes" Then go to "DEVCONSOLE" <-- Coming soon (;
+     Copy and paste them! and you are done....
+     WE WILL RELEASE A VIDEO OUT SOON!
+*/
+    /*let e=document;var ea = document.body;var g=document.body.append;var gt=document.body.insertBefore;var gta=document.body.prepend;*/let brown="brown";let red="red";let blue="blue";let green = "green";let yellow = "yellow";var menu = document.createElement('menuhack');var dis=Runner.prototype;let r=dis.gameOver;let c=Runner.instance_;menu.innerHTML=('<button onclick="Runner.instance_.gameOver=function(){}">GodMode</button><button onclick="Runner.instance_.gameOver=r">Disable Godmode</button><p>speedrunner:</p><button onclick="c.setSpeed(100);"></button>');document.body.prepend(menu);
