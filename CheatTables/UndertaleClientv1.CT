@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="31">
+  <Forms>
+    <UDF1 Class="TCEForm" Encoding="Ascii85">,sMGc5E9@Kz#ii4;Xu*W%M$A1X2^{]npVP]z^uv2nwg$a!pz3R9Fkwa,^C}do_#gT!Tg[+-8r$KBr]vc4XmEWIVUqUuLQ1_8@VVvX5a:I=vq)u5_*]-(W(I};_tVuS,kB2WDOHD*RtF3Tk;.CbMuP%7(t-[ll,TPQj3@==qvV}</UDF1>
+    <changelog Class="TCEForm" Encoding="Ascii85">J/q]nf-n?u?!E;iVB!ijE{#;5s1gnwIFNWQP*lR!Bc*8@CQjfAZX+hEdif6j^PNxip+*KZVa[ixxMp3{!YXM%EmL^)Bv]Bxsa5R;!6b)k7r_9mz9umaxoEuxyQ2KpRHqF$T3SB])YXHsq63nOLK-@V/A@-bgy8MhAP,PlFEk[jvov0}-b$8.@3HU{N?yBw6?%Wh4#4iBOt]]0V8GGgu?3</changelog>
+  </Forms>
+  <CheatEntries>
+    <CheatEntry>
+      <ID>33</ID>
+      <Description>"Undertale Hacks"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <Color>0000FF</Color>
+      <GroupHeader>1</GroupHeader>
+      <Address/>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>22</ID>
+          <Description>"Extra"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>FF0000</Color>
+          <GroupHeader>1</GroupHeader>
+          <Address/>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>21</ID>
+              <Description>"WORKING HACKS"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <Color>008000</Color>
+              <GroupHeader>1</GroupHeader>
+              <Address>0</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>20</ID>
+                  <Description>"HP Hack FIXED"</Description>
+                  <VariableType>Double</VariableType>
+                  <Address>"Undertale.exe"+00408950</Address>
+                  <Offsets>
+                    <Offset>2A0</Offset>
+                    <Offset>8</Offset>
+                    <Offset>10</Offset>
+                    <Offset>B8C</Offset>
+                    <Offset>10</Offset>
+                    <Offset>44</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>16</ID>
+                  <Description>"HP Hack FIXED"</Description>
+                  <VariableType>Double</VariableType>
+                  <Address>"Undertale.exe"+0040894C</Address>
+                  <Offsets>
+                    <Offset>2A0</Offset>
+                    <Offset>8</Offset>
+                    <Offset>0</Offset>
+                    <Offset>B80</Offset>
+                    <Offset>10</Offset>
+                    <Offset>44</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>17</ID>
+                  <Description>"HP Hack FIXED"</Description>
+                  <VariableType>Double</VariableType>
+                  <Address>"Undertale.exe"+00408950</Address>
+                  <Offsets>
+                    <Offset>2A0</Offset>
+                    <Offset>8</Offset>
+                    <Offset>0</Offset>
+                    <Offset>B80</Offset>
+                    <Offset>10</Offset>
+                    <Offset>44</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>18</ID>
+                  <Description>"HP Hack FIXED"</Description>
+                  <VariableType>Double</VariableType>
+                  <Address>"Undertale.exe"+003F9F44</Address>
+                  <Offsets>
+                    <Offset>2A0</Offset>
+                    <Offset>8</Offset>
+                    <Offset>0</Offset>
+                    <Offset>B80</Offset>
+                    <Offset>10</Offset>
+                    <Offset>44</Offset>
+                    <Offset>0</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>19</ID>
+                  <Description>"HP Hack FIXED"</Description>
+                  <VariableType>Double</VariableType>
+                  <Address>"Undertale.exe"+0040894C</Address>
+                  <Offsets>
+                    <Offset>2A0</Offset>
+                    <Offset>8</Offset>
+                    <Offset>10</Offset>
+                    <Offset>B8C</Offset>
+                    <Offset>10</Offset>
+                    <Offset>44</Offset>
+                  </Offsets>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>31</ID>
+                  <Description>"HP Hack FIXED"</Description>
+                  <VariableType>Double</VariableType>
+                  <Address>"Undertale.exe"+00408950</Address>
+                  <Offsets>
+                    <Offset>2A0</Offset>
+                    <Offset>8</Offset>
+                    <Offset>10</Offset>
+                    <Offset>B8C</Offset>
+                    <Offset>10</Offset>
+                    <Offset>44</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>30</ID>
+              <Description>"UI cheat enigne"</Description>
+              <Options moHideChildren="1"/>
+              <LastState Value="" RealAddress="00000000"/>
+              <Color>0000FF</Color>
+              <GroupHeader>1</GroupHeader>
+              <Address>0</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>32</ID>
+                  <Description>"speed 500"</Description>
+                  <LastState/>
+                  <Color>80FF80</Color>
+                  <VariableType>Auto Assembler Script</VariableType>
+                  <AssemblerScript>[ENABLE]
+
+luacall(speedhack_setSpeed(500))
+
+[DISABLE]
+
+luacall(speedhack_setSpeed(1))
+</AssemblerScript>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"HelpFull Hacks"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>FFFF80</Color>
+          <GroupHeader>1</GroupHeader>
+          <Address/>
+          <Offsets>
+            <Offset/>
+          </Offsets>
+          <Hotkeys>
+            <Hotkey>
+              <Action>Toggle Activation</Action>
+              <Keys>
+                <Key>17</Key>
+                <Key>49</Key>
+              </Keys>
+              <Description>Open/Close</Description>
+              <ID>0</ID>
+              <ActivateSound TTS="EN">Opened Help Full Hacks</ActivateSound>
+              <DeactivateSound TTS="EN">Closed Help Full Hacks</DeactivateSound>
+            </Hotkey>
+          </Hotkeys>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>3</ID>
+              <Description>"HP Hack"</Description>
+              <Color>00FF00</Color>
+              <VariableType>Double</VariableType>
+              <Address>"Undertale.exe"+0040894C</Address>
+              <Offsets>
+                <Offset>270</Offset>
+                <Offset>8</Offset>
+                <Offset>0</Offset>
+                <Offset>B68</Offset>
+                <Offset>10</Offset>
+                <Offset>44</Offset>
+              </Offsets>
+              <Hotkeys>
+                <Hotkey>
+                  <Action>Toggle Activation</Action>
+                  <Keys>
+                    <Key>17</Key>
+                    <Key>72</Key>
+                  </Keys>
+                  <Description>auto hot key xD</Description>
+                  <ID>0</ID>
+                  <ActivateSound TTS="EN">{MRDescription} Activated</ActivateSound>
+                  <DeactivateSound TTS="EN">{MRDescription} Deactivated</DeactivateSound>
+                </Hotkey>
+              </Hotkeys>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>13</ID>
+              <Description>"LV Change Value"</Description>
+              <Color>FF80FF</Color>
+              <VariableType>Double</VariableType>
+              <Address>"Undertale.exe"+0040894C</Address>
+              <Offsets>
+                <Offset>240</Offset>
+                <Offset>BEC</Offset>
+                <Offset>10</Offset>
+                <Offset>44</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>24</ID>
+          <Description>"Hacks"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>0080FF</Color>
+          <GroupHeader>1</GroupHeader>
+          <Address/>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>29</ID>
+              <Description>"Gold(EDIT VALUE)"</Description>
+              <Color>808000</Color>
+              <VariableType>Double</VariableType>
+              <Address>"Undertale.exe"+0040894C</Address>
+              <Offsets>
+                <Offset>140</Offset>
+                <Offset>48</Offset>
+                <Offset>0</Offset>
+                <Offset>B50</Offset>
+                <Offset>10</Offset>
+                <Offset>44</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>34</ID>
+      <Description>"Deltarune Hacks NOT DONE"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <Color>FFFF00</Color>
+      <GroupHeader>1</GroupHeader>
+      <Address/>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <Comments>Info:
+  MADE BY LAPIDE
+</Comments>
+  <LuaScript>PROCESS_NAME = 'Undertale.exe'
+
+function AttachProcess()
+   openProcess(process_name)
+if getProcessIDFromProcessName(PROCESS_NAME) ~= nil then
+      openProcess(PROCESS_NAME)
+	  Attach.ShowHint = true
+	  Attach.Enabled = false
+      Attach.Caption = 'Found Undertale!'
+      Loaded.Visible = true
+   else
+      showMessage("UNDERTALE UNEXPECTED ERROR. /univalid/")
+   end
+end
+
+-- onClick
+
+--------------------
+
+-- Undertale Rundertale is free!
+
+
+-- SOON WE WILL GIVE UNDERTALE OUT FOR FREE! JUST WAIT!
+--------------------
+--
+---- Panel
+--------------------
+TheSplitter = createSplitter(getMainForm())
+TheSplitter.Align = alRight
+
+
+--------------------
+--
+---- Panel
+--------------------
+CEPanel1 = createPanel(getMainForm())
+CEPanel1.Width = 200
+CEPanel1.Align = alRight
+CEPanel1.Caption = ''
+--------------------
+--
+---- Download
+--------------------
+
+
+--------------------
+--
+---- Attach
+--------------------
+Attach = createButton(CEPanel1)
+Attach.Left = 15
+Attach.Height = 80
+Attach.Hint = 'Restart Cheat Engine\nto attach'
+Attach.Top = 10
+Attach.Width = 150
+Attach.Caption = 'Attach Undertale'
+Attach.ShowHint = false
+Attach.onClick = AttachProcess
+
+-- onClick
+Attach = createButton(CEPanel1)
+Attach.Left = 15
+Attach.Height = 80
+Attach.Hint = 'Restart Cheat Engine\nto attach'
+Attach.Top = 300
+Attach.Width = 150
+Attach.Caption = 'Attach Deltarune'
+Attach.ShowHint = false
+
+--------------------
+--
+---- Loaded
+--------------------
+Loaded = createLabel(CEPanel1)
+Loaded.Left = 18
+Loaded.Top = 95
+Loaded.Visible = false
+Loaded.Caption = 'Enjoy Hacking :)'
+Loaded.Font.Color=0x008000
+Loaded.Font.Size=10
+--------------------
+------------------------------
+---- END FORM: getMainForm()
+----
+--
+
+--------------------
+--
+---- CELabel1
+--
+---- Arraylist
+--------------------
+
+--------------------
+------------------------------
+---- END FORM: getMainForm()
+----
+--
+
+local int = getInternet()
+local ICO = int.getURL("https://img.icons8.com/color/2x/undertale.png")
+local IM = createStringStream(ICO)
+int.Destroy()
+local Pic = createPicture()
+Pic.loadFromStream(IM)
+local Bit = Pic.getBitmap()
+getApplication().Icon = Bit
+--
+---- Loaded
+--------------------
+Loaded = createLabel(CEPanel1)
+Loaded.Left = 18
+Loaded.Top = 95
+Loaded.Visible = false
+Loaded.Caption = 'Loaded!'
+Loaded.Font.Color=0x008000
+Loaded.Font.Size=10
+
+getMainForm().caption = "Rundertale"
+
+Credits = createLabel(CEPanel1)
+Credits.Left = 15
+Credits.Top = 175
+Credits.Caption = 'Deltarune Is comming!'
+Credits.Font.Size=10
+function cycleFullCompact(sender,force) local state = not(compactmenuitem.Caption == 'Compact View Mode'); if force~=nil then state = not force end; compactmenuitem.Caption = state and 'Compact View Mode' or 'Full View Mode'; getMainForm().Splitter1.Visible = state; getMainForm().Panel4.Visible    = state; getMainForm().Panel5.Visible    = state; end; function addCompactMenu() if compactmenualreadyexists then return end; local parent = getMainForm().Menu.Items; compactmenuitem = createMenuItem(parent); parent.add(compactmenuitem); compactmenuitem.Caption = 'Compact View Mode'; compactmenuitem.OnClick = cycleFullCompact; compactmenualreadyexists = 'yes'; end; addCompactMenu(); cycleFullCompact(nil,true)
+</LuaScript>
+</CheatTable>

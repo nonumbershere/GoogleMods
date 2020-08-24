@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="31">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Hacks"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" Activated="1" RealAddress="00000000"/>
+      <Color>0000FF</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"Infinite Ammo"</Description>
+          <LastState Value="0" RealAddress="130A8FF4"/>
+          <Color>8000FF</Color>
+          <VariableType>4 Bytes</VariableType>
+          <Address>"Ravenfield.exe"+00F990C0</Address>
+          <Offsets>
+            <Offset>194</Offset>
+            <Offset>14</Offset>
+            <Offset>C</Offset>
+            <Offset>18</Offset>
+            <Offset>18</Offset>
+            <Offset>7C</Offset>
+            <Offset>A0</Offset>
+          </Offsets>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10</ID>
+          <Description>"WORKING"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>FF8000</Color>
+          <GroupHeader>1</GroupHeader>
+          <Address>0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>9</ID>
+              <Description>"Working inf ammo"</Description>
+              <LastState Value="30" RealAddress="1A198744"/>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"mono.dll"+0020B574</Address>
+              <Offsets>
+                <Offset>124</Offset>
+                <Offset>18</Offset>
+                <Offset>48</Offset>
+                <Offset>18</Offset>
+                <Offset>0</Offset>
+                <Offset>1D0</Offset>
+                <Offset>10</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>8</ID>
+              <Description>"2"</Description>
+              <LastState Value="30" RealAddress="1A198744"/>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"Ravenfield.exe"+00F99B6C</Address>
+              <Offsets>
+                <Offset>124</Offset>
+                <Offset>18</Offset>
+                <Offset>48</Offset>
+                <Offset>E0</Offset>
+                <Offset>C</Offset>
+                <Offset>38</Offset>
+                <Offset>18</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>18</ID>
+          <Description>"Non Working Hacks"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>404080</Color>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>17</ID>
+              <Description>"Infinity Pistol Ammo"</Description>
+              <Color>40FF00</Color>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"Ravenfield.exe"+01028EC8</Address>
+              <Offsets>
+                <Offset>124</Offset>
+                <Offset>38</Offset>
+                <Offset>8</Offset>
+                <Offset>68</Offset>
+                <Offset>44</Offset>
+                <Offset>10</Offset>
+                <Offset>40</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>15</ID>
+              <Description>"inf pistol ammo"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"Ravenfield.exe"+00F99144</Address>
+              <Offsets>
+                <Offset>124</Offset>
+                <Offset>38</Offset>
+                <Offset>8</Offset>
+                <Offset>68</Offset>
+                <Offset>4</Offset>
+                <Offset>90</Offset>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>13</ID>
+              <Description>"inf ammo"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"Ravenfield.exe"+01028EC8</Address>
+              <Offsets>
+                <Offset>124</Offset>
+                <Offset>38</Offset>
+                <Offset>8</Offset>
+                <Offset>68</Offset>
+                <Offset>4</Offset>
+                <Offset>50</Offset>
+                <Offset>40</Offset>
+              </Offsets>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>14</ID>
+                  <Description>"inf"</Description>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>"Ravenfield.exe"+01028EC8</Address>
+                  <Offsets>
+                    <Offset>124</Offset>
+                    <Offset>38</Offset>
+                    <Offset>8</Offset>
+                    <Offset>68</Offset>
+                    <Offset>24</Offset>
+                    <Offset>60</Offset>
+                    <Offset>40</Offset>
+                  </Offsets>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>16</ID>
+              <Description>"pistol ammo"</Description>
+              <VariableType>4 Bytes</VariableType>
+              <Address>"Ravenfield.exe"+00F99144</Address>
+              <Offsets>
+                <Offset>124</Offset>
+                <Offset>38</Offset>
+                <Offset>8</Offset>
+                <Offset>68</Offset>
+                <Offset>24</Offset>
+                <Offset>A0</Offset>
+                <Offset>0</Offset>
+              </Offsets>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1</ID>
+      <Description>"Exploits"</Description>
+      <Options moHideChildren="1"/>
+      <LastState Value="" RealAddress="00000000"/>
+      <Color>FF00FF</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>20</ID>
+          <Description>"New Comming Up Hacks(NOT DONE WILL NOT WORK!)"</Description>
+          <Options moHideChildren="1"/>
+          <LastState Value="" RealAddress="00000000"/>
+          <Color>FFFF00</Color>
+          <GroupHeader>1</GroupHeader>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>19</ID>
+              <Description>"0"</Description>
+              <LastState Value="0" RealAddress="03AFFE30"/>
+              <VariableType>4 Bytes</VariableType>
+              <Address>03AFFE30</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Cheat Engine Settings"</Description>
+      <LastState Value="" RealAddress="00000000"/>
+      <Color>00FF00</Color>
+      <GroupHeader>1</GroupHeader>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry Color="80000008">
+      <Description>Code :mov eax,[eax+44]</Description>
+      <AddressString>0516A512</AddressString>
+      <Before>
+        <Byte>EC</Byte>
+        <Byte>04</Byte>
+        <Byte>8B</Byte>
+        <Byte>45</Byte>
+        <Byte>08</Byte>
+      </Before>
+      <Actual>
+        <Byte>8B</Byte>
+        <Byte>40</Byte>
+        <Byte>44</Byte>
+      </Actual>
+      <After>
+        <Byte>85</Byte>
+        <Byte>C0</Byte>
+        <Byte>7F</Byte>
+        <Byte>18</Byte>
+        <Byte>8B</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+  <LuaScript>PROCESS_NAME = 'Ravenfield.exe'
+
+function AttachProcess()
+   openProcess(process_name)
+if getProcessIDFromProcessName(PROCESS_NAME) ~= nil then
+      openProcess(PROCESS_NAME)
+	  Attach.ShowHint = true
+	  Attach.Enabled = false
+      showMessage('Found ravenfield!')
+      Loaded.Visible = true
+   else
+      showMessage("Ravenfield Isn't a process.")
+   end
+end
+
+-- onClick
+
+--------------------
+--
+---- Panel
+--------------------
+TheSplitter = createSplitter(getMainForm())
+TheSplitter.Align = alRight
+
+
+--------------------
+--
+---- Panel
+--------------------
+CEPanel1 = createPanel(getMainForm())
+CEPanel1.Width = 200
+CEPanel1.Align = alRight
+CEPanel1.Caption = ''
+--------------------
+--
+---- Download
+--------------------
+
+
+--------------------
+--
+---- Attach
+--------------------
+Attach = createButton(CEPanel1)
+Attach.Left = 15
+Attach.Height = 80
+Attach.Hint = 'Restart Cheat Engine\nto attach'
+Attach.Top = 10
+Attach.Width = 150
+Attach.Caption = 'Attach Client'
+Attach.ShowHint = false
+Attach.onClick = AttachProcess
+
+--------------------
+--
+---- Loaded
+--------------------
+Loaded = createLabel(CEPanel1)
+Loaded.Left = 18
+Loaded.Top = 95
+Loaded.Visible = false
+Loaded.Caption = 'Enjoy Hacking :)'
+Loaded.Font.Color=0x008000
+Loaded.Font.Size=10
+--------------------
+------------------------------
+---- END FORM: getMainForm()
+----
+--
+
+--------------------
+--
+---- CELabel1
+--
+---- Arraylist
+--------------------
+
+--------------------
+------------------------------
+---- END FORM: getMainForm()
+----
+--
+
+local int = getInternet()
+local ICO = int.getURL("https://img.icons8.com/color/2x/undertale.png")
+local IM = createStringStream(ICO)
+int.Destroy()
+local Pic = createPicture()
+Pic.loadFromStream(IM)
+local Bit = Pic.getBitmap()
+getApplication().Icon = Bit
+--
+---- Loaded
+--------------------
+Loaded = createLabel(CEPanel1)
+Loaded.Left = 18
+Loaded.Top = 95
+Loaded.Visible = false
+Loaded.Caption = 'Loaded!'
+Loaded.Font.Color=0x008000
+Loaded.Font.Size=10
+
+getMainForm().caption = "RavenfieldHacks"
+function cycleFullCompact(sender,force) local state = not(compactmenuitem.Caption == 'Compact View Mode'); if force~=nil then state = not force end; compactmenuitem.Caption = state and 'Compact View Mode' or 'Full View Mode'; getMainForm().Splitter1.Visible = state; getMainForm().Panel4.Visible    = state; getMainForm().Panel5.Visible    = state; end; function addCompactMenu() if compactmenualreadyexists then return end; local parent = getMainForm().Menu.Items; compactmenuitem = createMenuItem(parent); parent.add(compactmenuitem); compactmenuitem.Caption = 'Compact View Mode'; compactmenuitem.OnClick = cycleFullCompact; compactmenualreadyexists = 'yes'; end; addCompactMenu(); cycleFullCompact(nil,true)
+</LuaScript>
+</CheatTable>
