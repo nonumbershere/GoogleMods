@@ -1,8 +1,3 @@
-# GoogleHacksBeta
-Just a BETA! Soon original is coming btw includes: best hacks!
-
-Hmmm.
-
-Want hacks for undertale, deltarune!
-COMING IN THE ORIGINAL GOOGLEHACKS!
-i am working on it
+!WARNING!
+This "place" will soon be deleted!
+Reason: THE NEW ONE IS ALMOST DONE!
