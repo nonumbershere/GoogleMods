@@ -16,6 +16,7 @@
              [patch log]: []
              
              [updates]: [Added speed soon close and open!]
+             Xtreme is with us!
 */                                                                                           //                                                             Free!?!?!?!            
 
 // How to use
@@ -36,4 +37,39 @@
      Copy and paste them! and you are done....
      WE WILL RELEASE A VIDEO OUT SOON!
 */
+console.log('MADE WITH XTREME!');
+var Xtreme = {
+    Credits: function credits() {
+       console.log('Creator: Lapide');
+ },
+    SuccesLog: function sec(msg) {
+        console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: lightgreen;', 'color: green', 'color: darkgreen', 'color: green;', 'color: lightgreen'); 
+},
+   ErrorLog: function e(msg) {
+      console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: red;', 'color: red', 'color: darkred', 'color: red;', 'color: red'); 
+},
+  WarningLog: function f(msg) {
+      console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: yellow;', 'color: yellow', 'color: darkgreen', 'color: yellow;', 'color: yellow'); 
+},
+ CustomLog: function(msg, firstcolor, corner1color, middlecolor, cornercolor, lastcolor) {
+       console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: '+firstcolor, 'color: '+corner1color, 'color: '+middlecolor, 'color: '+cornercolor, 'color: '+lastcolor); 
+},
+ MoreSpeed: function e() {
+        ++Runner.instance_.currentSpeed
+},
+ MoreMoreSpeed: function e() {
+       Runner.instance_.setSpeed(100);
+},
+ SetSpeed: function e(speed) {
+     Runner.instance_.setSpeed(speed);
+},
+  GodMode: function e() {
+        Runner.instance_.gameOver=function(){}
+},
+ DisableGodMode: function e() {
+       var main = Runner.prototype.gameOver
+       Runner.instance_.gameOver=main
+}
+}
+// Will update soon!
     /*let e=document;var ea = document.body;var g=document.body.append;var gt=document.body.insertBefore;var gta=document.body.prepend;*/let brown="brown";let red="red";let blue="blue";let green = "green";let yellow = "yellow";var menu = document.createElement('menuhack');var dis=Runner.prototype;let r=dis.gameOver;let c=Runner.instance_;menu.innerHTML=('<button onclick="Runner.instance_.gameOver=function(){}">GodMode</button><button onclick="Runner.instance_.setSpeed(0);">0 Speed</button><button onclick="Runner.instance_.gameOver=r">Disable Godmode</button><p>speedrunner:</p><button onclick="c.setSpeed(100);">Set Speed</button>');document.body.prepend(menu);
