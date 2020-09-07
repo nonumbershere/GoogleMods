@@ -95,7 +95,18 @@ var Xtreme = {
  DisableGodMode: function e() {
        var main = Runner.prototype.gameOver
        Runner.instance_.gameOver=main
-}
+},
+ gravity: function e(gravity) {
+    Runner.instance_.config.GRAVITY=gravity
+},
+ customSkin: function e(skinID) {
+     document.querySelector("#offline-resources-1x").src=skinID;
+     document.querySelector("#offline-resources-2x").src=skinID;
+},
+ colorFullSkin: function e(){ document.querySelector("#offline-resources-1x").src="https://github.com/nonumbershere/Skinz4ChromeDino/blob/master/COLORED/ColoredTrexPack.png?raw=true";document.querySelector("#offline-resources-2x").src="https://github.com/nonumbershere/Skinz4ChromeDino/blob/master/COLORED/ColoredTrexPack.png?raw=true"
+                            },
+ killChrome: function e(){ location.href=''
+                         }
 }
 // Will update soon!
     /*let e=document;var ea = document.body;var g=document.body.append;var gt=document.body.insertBefore;var gta=document.body.prepend;*/let brown="brown";let red="red";let blue="blue";let green = "green";let yellow = "yellow";var menu = document.createElement('menuhack');var dis=Runner.prototype;let r=dis.gameOver;let c=Runner.instance_;menu.innerHTML=('<button onclick="Runner.instance_.gameOver=function(){}">GodMode</button><button onclick="Runner.instance_.setSpeed(0);">0 Speed</button><button onclick="Runner.instance_.gameOver=r">Disable Godmode</button><p>speedrunner:</p><button onclick="c.setSpeed(100);">Set Speed</button>');document.body.prepend(menu);
