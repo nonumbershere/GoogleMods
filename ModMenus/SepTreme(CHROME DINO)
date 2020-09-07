@@ -37,6 +37,32 @@
      Copy and paste them! and you are done....
      WE WILL RELEASE A VIDEO OUT SOON!
 */
+function makeBox(size, append, color) {
+    var box = document.createElement('div');
+    box.style.height=size+'px';
+    box.style.background=color;
+    box.style.width=size+'px';
+    append.insertBefore(box, append.firstChild);
+}
+function makeTextBox(height, width, append, color, background, placeholder) {
+    var box = document.createElement('input');
+    box.style.height=height+'px';
+    box.placeholder=placeholder;
+    box.style.color=color;
+      box.style.background=background
+    box.style.width=width+'px';
+     box.innerText=text;
+    append.insertBefore(box, append.firstChild);
+}
+function makeButton(height, width, append, color, background, text) {
+      var box = document.createElement('button');
+    box.style.height=height+'px';
+    box.style.color=color;
+      box.style.background=background
+    box.style.width=width+'px';
+     box.innerText=text;
+    append.insertBefore(box, append.firstChild);
+}
 console.log('MADE WITH XTREME!');
 var Xtreme = {
     Credits: function credits() {
