@@ -46,7 +46,11 @@ function makeBox(size, append, color) {
 }
 var msgPrint = document.createElement('div');
 msgPrint.innerHTML='<div><font color="#ff0000">M</font><font color="#ff2a00">a</font><font color="#ff5500">d</font><font color="#ff7f00">e</font><font color="#ffaa00"> </font><font color="#ffd400">W</font><font color="#ffff00">i</font><font color="#bfff00">t</font><font color="#80ff00">h</font><font color="#40ff00"> </font><font color="#00ff00">X</font><font color="#00ff55">t</font><font color="#00ffaa">r</font><font color="#00ffff">e</font><font color="#00aaff">m</font><font color="#0055ff">e</font><font color="#0000ff">!</font></div><div></div><div><font color="#ff0000">+</font><font color="#ff2a00">S</font><font color="#ff5500">e</font><font color="#ff7f00">p</font><font color="#ffaa00">T</font><font color="#ffd400">r</font><font color="#ffff00">e</font><font color="#bfff00">m</font><font color="#80ff00">e</font></div>';
-document.body.append(msgPrint);
+document.body.prepend(msgPrint);
+msgPrint.style.right='50px';
+msgPrint.style.top='585px';
+msgPrint.style.fontWeight='bold';
+msgPrint.style.position='absolute';
 function makeTextBox(height, width, append, color, background, placeholder) {
     var box = document.createElement('input');
     box.style.height=height+'px';
