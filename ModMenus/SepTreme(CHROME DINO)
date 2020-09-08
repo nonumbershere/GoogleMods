@@ -116,4 +116,18 @@ var Xtreme = {
                          }
 }
 // Will update soon!
+var styles = [
+    'background: linear-gradient(#D33106, #571402)'
+    , 'border: 1px solid #3E0E02'
+    , 'color: white'
+    , 'display: block'
+    , 'text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3)'
+    , 'box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 5px 3px -5px rgba(0, 0, 0, 0.5), 0 -13px 5px -10px rgba(255, 255, 255, 0.4) inset'
+    , 'line-height: 40px'
+    , 'text-align: center'
+    , 'font-weight: bold'
+    , 'cursor: pointer'
+].join(';');
+
+console.log('%cMade with xtreme!', styles);
     /*let e=document;var ea = document.body;var g=document.body.append;var gt=document.body.insertBefore;var gta=document.body.prepend;*/let brown="brown";let red="red";let blue="blue";let green = "green";let yellow = "yellow";var menu = document.createElement('menuhack');var dis=Runner.prototype;let r=dis.gameOver;let c=Runner.instance_;menu.innerHTML=('<button onclick="Runner.instance_.gameOver=function(){}">GodMode</button><button onclick="Runner.instance_.setSpeed(0);">0 Speed</button><button onclick="Runner.instance_.gameOver=r">Disable Godmode</button><p>speedrunner:</p><button onclick="c.setSpeed(100);">Set Speed</button>');document.body.prepend(menu);
