@@ -56,10 +56,19 @@ document.location.href=''
                          },
  useCustom: function(type) {
         if (type == 'rainbow') {
-            function flash() {
-document.body.style.background='red';
-setTimeout(function(){document.body.style.background='blue';}, 1000)
-setTimeout(function(){flash();}, 2000);
+                        function flash() {
+            document.body.style.transition='2s ease 0s';
+            document.body.style.background='red';
+setTimeout(function(){document.body.style.background='blue';}, 1000);
+setTimeout(function(){document.body.style.background='yellow';}, 2000);
+setTimeout(function(){document.body.style.background='purple';}, 3000);
+setTimeout(function(){document.body.style.background='green';}, 4000);
+setTimeout(function(){document.body.style.background='lightgreen';}, 5000);
+setTimeout(function(){document.body.style.background='brown';}, 6000);
+setTimeout(function(){document.body.style.background='';}, 7000);
+setTimeout(function(){document.body.style.background='black';}, 8000);
+setTimeout(function(){document.body.style.background='red';}, 9000);
+setTimeout(function(){flash();}, 9000);
                  }
 flash();
 }
