@@ -1,0 +1,7 @@
+var ModMenus = {
+    SpeedPanel: function() {
+      var menu = document.createElement('div');
+       menu.innerHTML='<button onclick="Runner.instance_.setSpeed(100);">100 Speed</button>';
+document.body.append(menu);
+}
+}
