@@ -72,6 +72,15 @@ setTimeout(function(){flash();}, 9000);
                  }
 flash();
 }
+},
+alertBox: function alertBox(msg, title, color) {
+var alertbox = document.createElement('div');
+setTimeout(function(){alertbox.remove();}, 5000);
+alertbox.innerHTML='<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><style>.alert {  padding: 20px; background-color: '+color+';  color: white;}.closebtn {  margin-left: 15px;  color: white; font-weight: bold;  float: right; font-size: 22px;  line-height: 20px;  cursor: pointer;  transition: 0.3s;}.closebtn:hover {  color: black;}</style></head><body><div class="alert"> <span class="closebtn" onclick="this.parentElement.style.display="none";">&times</span>   <h1 style="font-weight: bold;">'+title+' </h1>'+msg+'</div></body></html>';
+document.body.append(alertbox);
+document.querySelector("body > div > div > span").addEventListener('click',function() {
+      alertbox.remove();
+});
 }
 }
 //
