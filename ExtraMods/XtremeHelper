@@ -81,6 +81,45 @@ document.body.append(alertbox);
 document.querySelector("body > div > div > span").addEventListener('click',function() {
       alertbox.remove();
 });
+},
+ removeMsgOfflineBox: function() {
+      document.querySelector("#main-message").remove();  
+},
+ hideMsgOfflineBox: function() {
+    document.querySelector("#main-message").hidden=true;
+},
+ showMsgOfflineBox: function() {
+   document.querySelector("#main-message").hidden=false;
+},
+ editTitle: function(msg) {
+   document.querySelector("#main-message > h1 > span").innerText=msg;
+ },
+  editFullDescription: function(msg) {
+     document.querySelector("#error-information-popup-content").innerText=msg;
+},
+ editDescription1: function(msg) {
+      document.querySelector("#suggestions-list > p").innerText=msg;
+},
+ editDescription2: function(msg) {
+document.querySelector("#suggestions-list > ul > li:nth-child(1)").innerText=msg;
+},
+ editDescription3: function(msg) {
+document.querySelector("#suggestions-list > ul > li:nth-child(2)").innerText=msg;
+},
+editDescription4: function(msg) {
+   document.querySelector("#error-information-popup-content > div.error-code").innerText=msg;
+},
+  editDescription5: function(msg) {
+     document.querySelector("#suggestions-list > ul").innerText=msg;
+},
+editTabTitle: function(newtitle) {
+     document.title=newtitle;
+},
+EditAll: function() {
+    document.designMode='on';
+},
+turnoffedit: function() {
+    document.designMode='off';
 }
 }
 //
