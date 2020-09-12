@@ -5,10 +5,19 @@
 // Enjoy!
 var Xtreme = {
    help: function(withwhat) {
-     console.log('To use "useCustom" do Xtreme.help("usecustom");');
+     console.log('Help commands:');
+     console.log('usePackage: Helps you to use Xtreme.usePackage!');
+     console.log('usecustom: Like usePackage but it dosent customize a element. It customizes a body.')
 if (withwhat == 'usecustom') {
      console.log('COMMANDS:');
     console.log('rainbow: Makes the background rainbow!');
+}
+if (withwhat == 'usePackage') {
+    console.log('COMMANDS: ')
+    console.log('basicMiscs: Adds more to Xtreme.Miscs!');
+    console.log('INCLUDES: ');
+    console.log('Alright, before we begin Includes are for LIKE addons for usePackage, so here: ');
+    console.log('septremelog: Includes the LOG command.');
 } 
 },
     Credits: function credits() {
@@ -115,11 +124,48 @@ editDescription4: function(msg) {
 editTabTitle: function(newtitle) {
      document.title=newtitle;
 },
-EditAll: function() {
+turnoneditmode: function() {
     document.designMode='on';
 },
-turnoffedit: function() {
+turnoffeditmode: function() {
     document.designMode='off';
+},
+Miscs: function(){},
+usePackage: function(PackageName, include) { // Just do basicMiscs for now!
+  if (PackageName == 'basicMiscs') {
+    Xtreme.alertBox('Unlocked Miscs Basic Package.', 'Unlocked', 'red');
+    Xtreme.Miscs.Credits = function() {
+      Xtreme.SuccesLog('Creator Of Package: Lapide');
+      Xtreme.SuccesLog('Thank you for using packages! You may now check your Miscs package ', PackageName);
+      }
+      Xtreme.Misc.useMoreRunner = function(whatCommand) {
+              Runner.instance_.Credits = function() {
+                console.log('Hack by lapide!');
+              }
+      };
+      Xtreme.Miscs.easterEggs = function(taskname) {
+              if (taskname == 'sep true') {
+                console.log('Ayy! i will add a septreme Package!')
+              }
+      };
+      Xtreme.Miscs.gamoveover = function() {
+           Runner.instance_.gameOver();
+      };
+      Xtreme.Miscs.Spam = function(spamMsg) {
+        console.log(spamMsg);
+        Xtreme.Miscs.Spam(spamMsg);
+      };
+      Xtreme.Miscs.RemoveCode = function(){
+        delete Xtreme == true;
+      };
+    if (include == 'septremeLog') {
+      console.log('Alerted: Succses!');
+      Xtreme.Miscs.Console = function(msg, data) {
+        console.log(msg, data);
+      }
+    }
+  }
 }
 }
-//
+Xtreme.Miscs.Runner=Runner;
+clear();
