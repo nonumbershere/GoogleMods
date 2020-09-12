@@ -165,7 +165,10 @@ usePackage: function(PackageName, include) { // Just do basicMiscs for now!
       }
     }
   }
-}
+},
+   customCredits: function(creator, color, size, padding, backgroundcolor) {
+    console.log('%cCreator: '+creator+'', 'color: '+color+'; font-size: '+size+'; padding: '+padding+'; background-color: '+backgroundcolor+';');
+ }
 }
 Xtreme.Miscs.Runner=Runner;
 clear();
