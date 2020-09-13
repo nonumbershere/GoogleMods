@@ -1,6 +1,12 @@
-/*
-   Made by: Lapide
-   For: Chrome Dino
+/**
+  * Made by: Lapide
+  * For: Chrome Dino
+  * Payment: false
+  * Paid: false
+  * free: true
+  * Illegal: false
+  * Legal: true
+  * Created With: JAVASCRIPT
 */
 // Enjoy!
 var Xtreme = {
@@ -343,8 +349,39 @@ usePackage: function(PackageName, include) { // Just do basicMiscs for now!
    customCredits: function(creator, color, size, padding, backgroundcolor) {
     console.log('%cCreator: '+creator+'', 'color: '+color+'; font-size: '+size+'; padding: '+padding+'; background-color: '+backgroundcolor+';');
  },
+ Points: function(anythinglessthan99999) {
+     if (anythinglessthan99999 > 100000) {
+      alert("Nah dude it can't be like dat XD");
+     } else {
+      Runner.instance_.distanceRan = anythinglessthan99999 / Runner.instance_.distanceMeter.config.COEFFICIENT
+     }
+ },
+ scoreFlash: function(boolean) {
+     console.log('Boolean, A boolean is an TRUE or FALSE. Type TRUE to get the flashy thing OR type FALSE to disable it.');
+     Runner.instance_.distanceMeter.achievement=boolean;
+ },
+ scoreFlash2: function() {
+  Runner.instance_.distanceMeter.flashHighScore()
+},
+breakGame: function(){
+  Runner.instance_.stopListening();
+},
+pauseGame: function(){
+     Runner.instance_.stop();
+},
+pauseGame2: function() {
+  Runner.instance_.setPlayStatus(false);
+Runner.instance_.paused = true;
+cancelAnimationFrame(Runner.instance_.raqId);
+Runner.instance_.raqId = 0
+},
+ flashBoth: function() {
+  Runner.instance_.distanceMeter.flashHighScore();
+  Runner.instance_.distanceMeter.achievement=true
+ },
  Runner: Runner,
-instance: Runner.instance,
+ RunnerPrototype: Runner.prototype,
+instance: Runner.instance_,
 keyboardGamePlay: function() {
   console.log('This uses the W-A-S-D keys.');
   Runner.keycodes.JUMP={32: 1, 87: 1, 38: 1}
@@ -376,7 +413,7 @@ break;
   Runner.instance_.gameOver=function(){}
 Runner.instance_.playingIntro=true;
 Runner.instance_.setSpeed(100);
-console.log('Press F to stop.');
+console.log('Press F to stop. And B to start.');
 document.addEventListener('keydown',function(e){
     switch(e.keyCode){
         case 70:
@@ -385,9 +422,17 @@ Runner.instance_.playingIntro=false;
 Runner.instance_.setSpeed(5);
 console.log('Done!');
    break;
+   case 66:
+   Runner.instance_.gameOver=function(){}
+Runner.instance_.playingIntro=true;
+Runner.instance_.setSpeed(100);
+   break;
  }
 });
+},
+removeGodMode: function(){},
+userGodMode: Runner.prototype.gameOver,
 }
-}
-Xtreme.Miscs.RunnerInstance = Runner.instance_;
-clear();
+Xtreme.Miscs.RunnerInstance = Runner.instance_
+// Enjoy!
+/****/
