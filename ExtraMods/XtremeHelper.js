@@ -469,11 +469,77 @@ ArcadeMode: () =>{
 },
 ArcadeModeOFF: () =>{
   Runner.instance_.setArcadeMode(false);
+},
+Ji: function(){
+
+},
+XtremeJiLoaded: function(y) {
+    if (y == 'gmer') {
+      var r = document.createElement('div');
+         Xtreme.alertBox('Succses!', 'Succses: ', 'green');
+         Xtreme.Ji.CreatedBox = Xtreme.alertBox;
+      document.body.append(r);
+    }
+    if (y == 'loadAssets') {
+      Xtreme.Ji.XtremeLoader = function(load) {
+        if(load == 'yes') {
+          Xtreme.Ji.addEvents = function(boolean) {
+               if (boolean == true) {
+                var r = document.createElement('div');
+                setTimeout(function(){r.remove()}, 7000);
+                r.innerHTML='<p style="color: green; background-color: lightblue;">Made With Xtreme.</p>';
+                document.body.append(r);
+               } else {
+                console.log('Subject Unressbolnaed-');
+               }
+          }
+        }
+        if(load == 'no') {
+          alert('Example has been taken.')
+        }
+      }
+    }
 }
 }
+Xtreme.XtremeJiLoaded('gmer');
+Xtreme.XtremeJiLoaded('loadAssets');
+Xtreme.Ji.XtremeLoader('yes');
+Xtreme.Ji.addEvents(true);
+var MadeHack
 Xtreme.Miscs.RunnerInstance = Runner.instance_
 /*
 choose([
         
       ])
+*/
+clear();
+function l() {
+  alert('Succses!');
+}
+console.log('loadAssets has been found.');
+console.log('Ji.XtremeLoader added with yes.');
+console.log('Created TRUE');
+console.log('Ji addEvenets added.');
+setTimeout(function(){console.log('Done!');}, 2000);
+clear();
+clear();
+clear();
+clear();
+clear();
+clear();
+// Finished!
+/*
+                                               
+ #    #  #####  #####   ######  #    #  ###### 
+  #  #     #    #    #  #       ##  ##  #      
+   ##      #    #    #  #####   # ## #  #####  
+   ##      #    #####   #       #    #  #      
+  #  #     #    #   #   #       #    #  #      
+ #    #    #    #    #  ######  #    #  ###### 
+                                               
+                                               
+                                               
+                                               
+                  HACK
+                                    
 */
