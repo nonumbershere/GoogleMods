@@ -346,6 +346,7 @@ usePackage: function(PackageName, include) { // Just do basicMiscs for now!
     }
   }
 },
+choose: function choose(arr) {return arr[Math.floor(Math.random()*arr.length)];}, // Stolen from cookie clicker XD
    customCredits: function(creator, color, size, padding, backgroundcolor) {
     console.log('%cCreator: '+creator+'', 'color: '+color+'; font-size: '+size+'; padding: '+padding+'; background-color: '+backgroundcolor+';');
  },
@@ -432,7 +433,47 @@ Runner.instance_.setSpeed(100);
 },
 removeGodMode: function(){},
 userGodMode: Runner.prototype.gameOver,
+nightMode: function(){ 
+  Runner.instance_.isDarkMode=true;
+  document.body.style.background='black';
+  Runner.instance_.inverted=true;
+},
+showStart: function() {
+  Runner.instance_.inverted=true;
+},
+hideStarts: function() {
+  Runner.instance_.inverted=false;
+},
+dayMode: function() {
+  Runner.instance_.isDarkMode=false;
+document.body.style.background='white';
+  Runner.instance_.inverted=false;
+},
+startGame: function() {
+  Runner.instance_.startGame();
+},
+randomEvent: () =>{
+     document.write(Xtreme.choose(["yo mama xD", "die die die jk.", 'runner "is gay"', 'rip yo mama', 'Facts: <h2>YOUR COOL</h2>']));
+},
+randomAlert: () =>{
+  alert(Xtreme.choose(["Welcome, to xtreme!", 'lol xd', 'punk 1v1 me gay bword', 'jk', 'run. ', 'rip', 'rip', 'rip', 'rip', 'THIS IS A LENGENDARY TEXT!']));
+},
+reasonOfRandom: () =>{
+  console.log('The reason of it is to piss off orteil')
+},
+noArcadeMode: () =>{
+  Xtreme.editTabTitle('chrome://dino');
+},
+ArcadeMode: () =>{
+  Runner.instance_.setArcadeMode(true);
+},
+ArcadeModeOFF: () =>{
+  Runner.instance_.setArcadeMode(false);
+}
 }
 Xtreme.Miscs.RunnerInstance = Runner.instance_
-// Enjoy!
-/****/
+/*
+choose([
+        
+      ])
+*/
