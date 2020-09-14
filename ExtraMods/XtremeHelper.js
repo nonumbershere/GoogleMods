@@ -498,8 +498,27 @@ XtremeJiLoaded: function(y) {
           alert('Example has been taken.')
         }
       }
-    }
+   }
+},
+ activ: 0,
+ null: null,
+ changeJumpheight: function(jump_height, speed) {
+    Runner.instance_.tRex.config.INIITAL_JUMP_VELOCITY = -jump_height;
+    Runner.instance_.tRex.config.DROP_VELOCITY = -jump_height / speed
+ }
 }
+var XtremeRunner = {
+  name: "Yo ",
+  middleName: "Mama ",
+  lastName: "XD",
+  doConsole: function() {
+   console.log(XtremeRunner.name, XtremeRunner.middleName, XtremeRunner.lastName);
+  XtremeRunner.doConsole();
+ },
+ changeJumpheight: function(jump_height) {
+    this.config.INIITAL_JUMP_VELOCITY = -jump_height;
+    this.config.DROP_VELOCITY = -jump_height / 10
+ }
 }
 Xtreme.XtremeJiLoaded('gmer');
 Xtreme.XtremeJiLoaded('loadAssets');
@@ -521,6 +540,18 @@ console.log('Ji.XtremeLoader added with yes.');
 console.log('Created TRUE');
 console.log('Ji addEvenets added.');
 setTimeout(function(){console.log('Done!');}, 2000);
+clear();
+clear();
+clear();
+clear();
+clear();
+clear();
+clear();
+clear();
+clear();
+clear();
+clear();
+clear();
 clear();
 clear();
 clear();
