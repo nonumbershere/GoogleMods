@@ -29,18 +29,6 @@ if (withwhat == 'usePackage') {
     Credits: function credits() {
        console.log('Creator: Lapide');
  },
-    SuccesLog: function sec(msg) {
-        console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: lightgreen;', 'color: green', 'color: darkgreen', 'color: green;', 'color: lightgreen'); 
-},
-   ErrorLog: function e(msg) {
-      console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: red;', 'color: red', 'color: darkred', 'color: red;', 'color: red'); 
-},
-  WarningLog: function f(msg) {
-      console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: yellow;', 'color: yellow', 'color: darkgreen', 'color: yellow;', 'color: yellow'); 
-},
- CustomLog: function(msg, firstcolor, corner1color, middlecolor, cornercolor, lastcolor) {
-       console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: '+firstcolor, 'color: '+corner1color, 'color: '+middlecolor, 'color: '+cornercolor, 'color: '+lastcolor); 
-},
  MoreSpeed: function e() {
         ++Runner.instance_.currentSpeed
 },
@@ -203,18 +191,6 @@ if (withwhat == 'usePackage') {
     Credits: function credits() {
        console.log('Creator: Lapide');
  },
-    SuccesLog: function sec(msg) {
-        console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: lightgreen;', 'color: green', 'color: darkgreen', 'color: green;', 'color: lightgreen'); 
-},
-   ErrorLog: function e(msg) {
-      console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: red;', 'color: red', 'color: darkred', 'color: red;', 'color: red'); 
-},
-  WarningLog: function f(msg) {
-      console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: yellow;', 'color: yellow', 'color: darkgreen', 'color: yellow;', 'color: yellow'); 
-},
- CustomLog: function(msg, firstcolor, corner1color, middlecolor, cornercolor, lastcolor) {
-       console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: '+firstcolor, 'color: '+corner1color, 'color: '+middlecolor, 'color: '+cornercolor, 'color: '+lastcolor); 
-},
  MoreSpeed: function e() {
         ++Runner.instance_.currentSpeed
 },
@@ -505,7 +481,79 @@ XtremeJiLoaded: function(y) {
  changeJumpheight: function(jump_height, speed) {
     Runner.instance_.tRex.config.INIITAL_JUMP_VELOCITY = -jump_height;
     Runner.instance_.tRex.config.DROP_VELOCITY = -jump_height / speed
- }
+ },
+ XtremeConsole: function(oldCons, data){
+    return {
+        log: function(text, data){
+            oldCons.log(text, data);
+            // Your code
+        },
+        info: function (text) {
+            oldCons.info(text, data);
+            // Your code
+        },
+        warn: function (text) {
+            oldCons.warn(text);
+            // Your code
+        },
+        error: function (text) {
+            oldCons.error(text);
+            // Your code
+        },
+      SuccesLog: function sec(msg) {
+        console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: lightgreen;', 'color: green', 'color: darkgreen', 'color: green;', 'color: lightgreen'); 
+},
+   ErrorLog: function e(msg) {
+      console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: red;', 'color: red', 'color: darkred', 'color: red;', 'color: red'); 
+},
+  WarningLog: function f(msg) {
+      console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: yellow;', 'color: yellow', 'color: darkgreen', 'color: yellow;', 'color: yellow'); 
+},
+ CustomLog: function(msg, firstcolor, corner1color, middlecolor, cornercolor, lastcolor) {
+       console.log('%c{ %c[ %c' +msg +' %c] %c}', 'color: '+firstcolor, 'color: '+corner1color, 'color: '+middlecolor, 'color: '+cornercolor, 'color: '+lastcolor); 
+}
+}(window.console)
+},
+randomNumber: function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min; // Credits to CHROME://DINO
+},
+addXtremePackets: function(packetName) {
+  if(packetName == 'JAVASCRIPT') {
+           Xtreme.JAVASCRIPT = {
+            morePackets: function() {
+              console.log('JAVASCRIPT, and more.')
+            },
+            reUseData: function(argument) {
+              // body...
+            }
+           }
+  }
+  console.log(packetName+" loaded.")
+},
+removeRunner: function(){
+ Runner = function(){ console.log('removed.') }
+},
+addTimeStamp: function() {
+var e = 0;
+var r = document.createElement('div');
+r.innerHTML='<p id="id1">0</p>';
+var l = r.children.id1;
+function e2() {
+   e = e + 1;
+setTimeout(function(){e2()}, 1000);
+r.innerHTML='<p id="id1">'+e+'</p>';
+};
+e2();
+document.body.insertBefore(r, document.body.firstChild);
+r.style.borderRadius='10%';
+r.style.background='red';
+r.style.color='blue';
+r.style.width='50px';
+}, // took sometime ngl
+veiwXtremeData: function() {
+  return Xtreme;
+  console.log(Xtreme);
+}
 }
 var XtremeRunner = {
   name: "Yo ",
@@ -515,6 +563,7 @@ var XtremeRunner = {
    console.log(XtremeRunner.name, XtremeRunner.middleName, XtremeRunner.lastName);
   XtremeRunner.doConsole();
  },
+
  changeJumpheight: function(jump_height) {
     this.config.INIITAL_JUMP_VELOCITY = -jump_height;
     this.config.DROP_VELOCITY = -jump_height / 10
@@ -540,18 +589,6 @@ console.log('Ji.XtremeLoader added with yes.');
 console.log('Created TRUE');
 console.log('Ji addEvenets added.');
 setTimeout(function(){console.log('Done!');}, 2000);
-clear();
-clear();
-clear();
-clear();
-clear();
-clear();
-clear();
-clear();
-clear();
-clear();
-clear();
-clear();
 clear();
 clear();
 clear();
