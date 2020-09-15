@@ -9,6 +9,33 @@
   * Created With: JAVASCRIPT
 */
 // Enjoy!
+// Colors
+var pink = 'pink';
+var olive = 'olive';
+var marine = 'marine';
+var emerald = 'emerald';
+var lavender ='lavernder';
+var grass = 'grass';
+var cyan = 'cyan';
+var apple = 'apple';
+var magenta = 'magenta';
+var purple = 'purple';
+var orange = 'orange';
+var red = 'red';
+var blue = 'blue';
+var lightblue = 'lightblue';
+var darkred = 'darkred';
+var darkblue='darkblue';
+var yellow = 'yellow';
+var green = 'green';
+var darkgreen = 'darkgreen';
+var lightred = 'lightred';
+var white = 'white';
+var black ='black';
+var brown = 'brown';
+var gray = 'gray';
+var lime = 'lime';
+// now for the HACK!
 var Xtreme = {
    help: function(withwhat) {
      console.log('Help commands:');
@@ -533,7 +560,23 @@ addXtremePackets: function(packetName) {
 removeRunner: function(){
  Runner = function(){ console.log('removed.') }
 },
-addTimeStamp: function() {
+annoyingJumpingAudio: function(){
+  var r = document.createElement('div');
+r.innerHTML='<audio controls id="p"><source src="horse.ogg" type="audio/ogg" id="f"><source  id="m" src="https://soundbible.com/mp3/Tyrannosaurus%20Rex%20Roar-SoundBible.com-807702404.mp3" type="audio/mpeg"></audio>';
+document.body.prepend(r);
+r.hidden=true;
+var l = r.children.p;
+document.addEventListener('keydown',function(e) {
+   switch(e.keyCode) {
+       case 32:
+l.play();
+break;
+}
+});
+},
+/*
+addTimeStampTrueOrFalse: function(show_true_or_false) {
+  if(show_true_or_false == true) {
 var e = 0;
 var r = document.createElement('div');
 r.innerHTML='<p id="id1">0</p>';
@@ -549,21 +592,67 @@ r.style.borderRadius='10%';
 r.style.background='red';
 r.style.color='blue';
 r.style.width='50px';
-}, // took sometime ngl
+}
+if (show_true_or_false == false) {
+  document.querySelector("#t > div:nth-child(1)").replaceWith('');
+}
+}, // took sometime ngl*/
+addTimeStamp: function() {
+  Xtreme.removeTimeStamp =function() {
+    Xtreme.removeTimeStamp = function(){  }
+    document.querySelector("#t > div:nth-child(1)").replaceWith('');
+}
+var e = 0;
+var r = document.createElement('div');
+r.innerHTML='<p id="id1">0</p>';
+var l = r.children.id1;
+function e2() {
+   e = e + 1;
+setTimeout(function(){e2()}, 1000);
+r.innerHTML='<p id="id1">'+e+'</p>';
+};
+e2();
+document.body.insertBefore(r, document.body.firstChild);
+r.style.borderRadius='10%';
+r.style.background='blue';
+r.style.color='red';
+r.style.width='50px';
+},
+addTimeStampByColor: function(backgroundColor, fontColor) {
+  Xtreme.removeTimeStamp =function() {
+    Xtreme.removeTimeStamp = function(){  }
+    document.querySelector("#t > div:nth-child(1)").replaceWith('');
+}
+var e = 0;
+var r = document.createElement('div');
+r.innerHTML='<p id="id1">0</p>';
+var l = r.children.id1;
+function e2() {
+   e = e + 1;
+setTimeout(function(){e2()}, 1000);
+r.innerHTML='<p id="id1">'+e+'</p>';
+};
+e2();
+document.body.insertBefore(r, document.body.firstChild);
+r.style.borderRadius='10%';
+r.style.background=backgroundColor;
+r.style.color=fontColor;
+r.style.width='50px';
+},
+/*
+removeTimeStampTrueOrFalse: function(show_true_or_false) {
+  if(show_true_or_false == true) {
+document.querySelector("#t > div:nth-child(1)").remove();
+  }
+  if(show_true_or_false == false) {
+    console.log('Set as false.');
+  }
+},
+*/
 veiwXtremeData: function() {
   return Xtreme;
   console.log(Xtreme);
-}
-}
-var XtremeRunner = {
-  name: "Yo ",
-  middleName: "Mama ",
-  lastName: "XD",
-  doConsole: function() {
-   console.log(XtremeRunner.name, XtremeRunner.middleName, XtremeRunner.lastName);
-  XtremeRunner.doConsole();
- },
-
+},
  changeJumpheight: function(jump_height) {
     this.config.INIITAL_JUMP_VELOCITY = -jump_height;
     this.config.DROP_VELOCITY = -jump_height / 10
@@ -575,6 +664,15 @@ Xtreme.Ji.XtremeLoader('yes');
 Xtreme.Ji.addEvents(true);
 var MadeHack
 Xtreme.Miscs.RunnerInstance = Runner.instance_
+var XtremeRunner = {
+  name: "Yo ",
+  middleName: "Mama ",
+  lastName: "XD",
+  doConsole: function() {
+   console.log(XtremeRunner.name, XtremeRunner.middleName, XtremeRunner.lastName);
+  XtremeRunner.doConsole();
+ }
+ }
 /*
 choose([
         
