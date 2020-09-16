@@ -1,0 +1,17 @@
+#Miscs {
+   text-shadow: 20px 12px 2px black;
+}
+body {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#Hacks {
+    color: red;
+    font-size: 30px
+}
+button {
+    border-radius: 80px;
+}
+input {
+    border-radius: 8px
+}
