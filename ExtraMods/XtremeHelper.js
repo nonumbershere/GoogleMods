@@ -37,6 +37,15 @@ var gray = 'gray';
 var lime = 'lime';
 // now for the HACK!
 var Xtreme = {
+ turnOffArcadeMode: function() {
+ Runner.instance_.isArcadeMode = function(){}
+Runner.instance_.setArcadeMode = function(){}
+ },
+ turnOnArcadeMode: function() {
+  Runner.instance_.isArcadeMode = Runner.prototype.isArcadeMode;
+Runner.instance_.setArcadeMode = Runner.prototype.setArcadeMode;
+  Runner.instance_.setArcadeMode();
+ },
    help: function(withwhat) {
      console.log('Help commands:');
      console.log('usePackage: Helps you to use Xtreme.usePackage!');
