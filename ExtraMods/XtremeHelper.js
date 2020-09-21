@@ -21,6 +21,8 @@ var apple = 'apple';
 var magenta = 'magenta';
 var purple = 'purple';
 var orange = 'orange';
+var darkgreen = 'darkgreen';
+var lightgreen = 'lightgreen';
 var red = 'red';
 var blue = 'blue';
 var lightblue = 'lightblue';
@@ -627,7 +629,7 @@ r.style.background='blue';
 r.style.color='red';
 r.style.width='50px';
 },
-addTimeStampByColor: function(backgroundColor, fontColor) {
+addTimeStampByColor: function(backgroundColor, fontColor, fontsize, width, height) {
   Xtreme.removeTimeStamp =function() {
     Xtreme.removeTimeStamp = function(){  }
     document.querySelector("#t > div:nth-child(1)").replaceWith('');
@@ -644,6 +646,11 @@ r.innerHTML='<p id="id1">'+e+'</p>';
 e2();
 document.body.insertBefore(r, document.body.firstChild);
 r.style.borderRadius='10%';
+r.style.width = height;
+var ewer = width + height;
+console.log(ewer + fontsize);
+r.style.height = width;
+r.style.fontSize=fontsize;
 r.style.background=backgroundColor;
 r.style.color=fontColor;
 r.style.width='50px';
@@ -718,3 +725,4 @@ clear();
                   HACK
                                     
 */
+
