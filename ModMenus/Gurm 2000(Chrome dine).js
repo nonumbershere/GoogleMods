@@ -72,6 +72,7 @@ document.querySelector("#modmenu").style.top='500px';
 * Legal: Yes
 * Illegal: Yes. WAIT NO
 */
+/*
 var r = document.createElement('div');
 function godmode() {
 var e = document.createElement('button');
@@ -197,4 +198,5 @@ document.querySelector("#modmenu").style.borderRadius='10px';
 document.querySelector("#modmenu").style.position='absolute';
 document.querySelector("#modmenu").style.top='500px';
 // https://github.com/nonumbershere/Hacks-and-mods/blob/master/Apk%20mod%20menu/hitbox.png?raw=true
+*/
 */
