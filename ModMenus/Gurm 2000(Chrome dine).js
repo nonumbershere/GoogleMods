@@ -199,4 +199,3 @@ document.querySelector("#modmenu").style.position='absolute';
 document.querySelector("#modmenu").style.top='500px';
 // https://github.com/nonumbershere/Hacks-and-mods/blob/master/Apk%20mod%20menu/hitbox.png?raw=true
 */
-*/
